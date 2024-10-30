@@ -1,0 +1,246 @@
+---
+const testimonials = [
+  {
+    quote: "Excellent data on the security of us and our partners",
+    text: "UpGuard gives me an instant overview and detailed data on my organization's public security posture. Plus an opportunity to evaluate our partner candidates to figure out potential security risks.",
+    author: "Verified User in Entertainment",
+    company: "Mid-Market",
+  },
+  {
+    quote: "Great service with lots of features",
+    text: "Easy to understand actionable information from regular scans at your fingertips. It was very easy to set up and see results within 24 hours. Customer support is quick to respond and helpful.",
+    author: "Verified User in Real Estate",
+    company: "Mid-Market",
+  },
+  {
+    quote: "Impactful tool for vendor risk management",
+    text: "In UpGuard we can easily do automated risk assessment, third-party risk identification, security ratings of vendors, and regulatory compliance.",
+    author: "Verified User in Technology",
+    company: "Mid-Market",
+  },
+];
+---
+<div class="testimonial-container">
+  <div class="marquee">
+    {testimonials.map((testimonial) => (
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <blockquote>"{testimonial.quote}"</blockquote>
+        <p>{testimonial.text}</p>
+        <footer>
+          <strong>{testimonial.author}</strong><br />
+          {testimonial.company}
+        </footer>
+      </div>
+    ))}
+  </div>
+</div>
+
+<div class="testimonial-container1">
+  <div class="marquee">
+    {testimonials.map((testimonial) => (
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <blockquote>"{testimonial.quote}"</blockquote>
+        <p>{testimonial.text}</p>
+        <footer>
+          <strong>{testimonial.author}</strong><br />
+          {testimonial.company}
+        </footer>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .testimonial-container1 {
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px;
+    box-sizing:border-box;
+    display:;
+    justify-content: center;
+  }
+
+  .marquee {
+    display: flex;
+    flex-direction:column-reverse;
+    position: relative;
+    animation: scroll 5s linear infinite;
+  }
+
+  .testimonial-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    max-width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .rating {
+    color: #ff9500;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  blockquote {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  footer {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  /* Additional Styling for the Intro Section */
+  .intro {
+    background-color: #1a73e8;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    background-color: #fff;
+    color: #1a73e8;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .cta-button:hover {
+    background-color: #f1f1f1;
+  }
+</style>
+
+<style>
+  .testimonial-container {
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    background-color: #1a73e8;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+  }
+
+  .marquee {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: scroll 5ms linear infinite;
+  }
+
+  .testimonial-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    max-width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .rating {
+    color: #ff9500;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  blockquote {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  footer {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  /* Additional Styling for the Intro Section */
+  .intro {
+    background-color: #1a73e8;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    background-color: #fff;
+    color: #1a73e8;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .cta-button:hover {
+    background-color: #f1f1f1;
+  }
+</style>
